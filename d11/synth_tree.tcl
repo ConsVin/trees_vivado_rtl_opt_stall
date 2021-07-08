@@ -7,10 +7,10 @@ if { $::argc > 0 } {
 set TOP "tree_bdt0_t${TOP_IDX}"
 puts "### Top Level : $TOP"
 add_files vhdl/Constants.vhd
-add_files ../firmware/core/Types.vhd
-add_files ../firmware/core/Tree.vhd
-add_files ../firmware/trees/tree_bdt0_t${TOP_IDX}.vhd
-add_files ../firmware/trees/Arrays0_${TOP_IDX}.vhd
+add_files vhdl/Types.vhd
+add_files vhdl/Tree.vhd
+add_files vhdl/tree_bdt0_t${TOP_IDX}.vhd
+add_files vhdl/Arrays0_${TOP_IDX}.vhd
 
 set_property file_type {VHDL 2008} [get_files]
 synth_design -top $TOP -part xcu50-fsvh2104-2-e -mode out_of_context  -directive runtimeoptimized

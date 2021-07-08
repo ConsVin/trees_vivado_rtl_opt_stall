@@ -1,5 +1,3 @@
-#TOP="BDT_splitted"
-#TOP="BDT"
 TOP_IDX="0000"
 TOP="tree_bdt0_t${TOP_IDX}"
 vivado -mode batch \
